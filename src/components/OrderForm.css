@@ -1,0 +1,184 @@
+.order-form-container {
+    padding: 24px;
+  }
+  
+  .form-section-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .form-group { margin-bottom: 20px; }
+  .form-label { display: flex; align-items: center; margin-bottom: 8px; font-weight: 600; color: #4a5568; }
+  .form-input { width: 100%; /* ... other base styles */ }
+  .error-message { color: #e53e3e; font-size: 14px; margin-top: 4px; }
+  .icon-prefix { margin-right: 8px; }
+  
+  .shop-selection {
+    margin-bottom: 24px;
+  }
+  .shop-selection__title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #2d3748;
+    margin: 0 0 12px 0;
+  }
+  .shop-selection__options {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .shop-option {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .shop-option:hover {
+    border-color: #c3dafe;
+  }
+  .shop-option--selected {
+    border-color: #667eea;
+    background-color: #f0f5ff;
+  }
+  .shop-option__radio {
+    margin-right: 12px;
+    flex-shrink: 0;
+  }
+  .shop-option__name { font-weight: 600; color: #2d3748; }
+  .shop-option__address { font-size: 14px; color: #718096; }
+  .shop-option__details { font-size: 12px; color: #718096; }
+  
+  .map-toggle-button {
+    margin-left: 8px;
+    background: none;
+    border: none;
+    color: #667eea;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  textarea.form-input {
+    resize: vertical;
+    min-height: 80px;
+  }
+  
+  /* Coupon Section */
+  .coupon-input-group {
+    display: flex;
+    gap: 8px;
+  }
+  .coupon-input-group__input {
+    flex: 1;
+  }
+  .coupon-input-group__button {
+    white-space: nowrap;
+  }
+  .applied-coupon-badge {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+    border-radius: 8px;
+    color: #155724;
+  }
+  .applied-coupon-badge__savings {
+    font-size: 14px;
+  }
+  .applied-coupon-badge__remove-btn {
+    background: none;
+    border: none;
+    color: #155724;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+  }
+  .applied-coupon-badge__remove-btn:hover {
+    background-color: rgba(0,0,0,0.1);
+  }
+  
+  /* Order Summary */
+  .order-summary {
+    background: #f8f9fa;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+  }
+  .order-summary__title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2d3748;
+    margin: 0 0 12px 0;
+  }
+  .order-summary__item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  .order-summary__item:last-of-type {
+    margin-bottom: 12px;
+  }
+  .order-summary__total {
+    border-top: 1px solid #e2e8f0;
+    padding-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .order-summary__discount-details {
+    font-size: 14px;
+    color: #718096;
+    text-align: right;
+    font-weight: normal;
+    line-height: 1.4;
+  }
+  .order-summary__final-price {
+    color: #667eea;
+    display: block;
+    text-align: right;
+  }
+  
+  .submit-order-button {
+    width: 100%;
+    font-size: 16px;
+    padding: 16px;
+    transition: opacity 0.3s ease;
+  }
+  .submit-order-button:disabled {
+    opacity: 0.7;
+    cursor: wait;
+  }
+  .submit-order-button__loading-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .spinner {
+    width: 16px;
+    height: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-top: 2px solid white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

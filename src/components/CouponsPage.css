@@ -1,0 +1,198 @@
+.coupons-main {
+  padding: 40px 0;
+  min-height: calc(100vh - 100px);
+}
+
+.coupons-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.coupons-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 16px;
+}
+
+.coupons-subtitle {
+  font-size: 18px;
+  color: #718096;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.coupons-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.coupons-tab {
+  padding: 8px 16px;
+  border: 2px solid #e2e8f0;
+  border-radius: 20px;
+  background: white;
+  color: #718096;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: capitalize;
+}
+
+.coupons-tab.active {
+  border: 2px solid #667eea;
+  background: #667eea;
+  color: white;
+}
+
+.coupon-card {
+  position: relative;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.coupon-card.expired {
+  opacity: 0.6;
+}
+
+.coupon-expired-label {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: #dc3545;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  z-index: 1;
+}
+
+.coupon-card-inner {
+  padding: 24px;
+}
+
+.coupon-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.coupon-emoji {
+  font-size: 32px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f9fa;
+  border-radius: 12px;
+}
+
+.coupon-card-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2d3748;
+  margin: 0 0 4px 0;
+}
+
+.coupon-discount {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #667eea;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.coupon-description {
+  color: #718096;
+  font-size: 14px;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.coupon-code-block {
+  background: #f8f9fa;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.coupon-code-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.coupon-code {
+  font-size: 16px;
+  font-weight: 700;
+  color: #2d3748;
+  font-family: monospace;
+  letter-spacing: 1px;
+}
+
+.coupon-copy-btn {
+  background: #667eea;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: all 0.3s ease;
+  opacity: 1;
+}
+
+.coupon-copy-btn.copied {
+  background: #10b981;
+}
+
+.coupon-copy-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.coupon-meta {
+  font-size: 12px;
+  color: #718096;
+}
+
+.coupon-meta-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 4px;
+}
+
+.coupon-meta-row:last-child {
+  margin-bottom: 0;
+}
+
+.coupons-empty {
+  text-align: center;
+  padding: 60px 20px;
+  color: #718096;
+}
+
+.coupons-empty-icon {
+  margin-bottom: 16px;
+  opacity: 0.5;
+}
+
+.coupons-empty-title {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
